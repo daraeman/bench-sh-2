@@ -28,6 +28,8 @@ IPv6 only speed test with system benchmark. This will use 1 GB bandwidth!<br /><
 System Info + Speedtest IPv4 & IPv6 + Drive Speed + System Benchmark:<br />
 <code>./bench.sh -b46 or ./bench.sh -b64</code><br />
 Dual stack speed test with system benchmark. This will use 2 GB bandwidth.<br /><br /><br />
+<code>./bench.sh -p</code><br />
+All the non-network tests.<br /><br /><br />
 <strong>This script is based on bench.sh by akamaras/camarg from <a href="http://www.akamaras.com/linux/linux-server-info-script/">here</a>.</strong><br />
 Copyright (C) 2011 by akamaras/camarg<br /><br />
 <strong>dmmcinytre3 from FreeVPS has added the speed test.</strong><br />
