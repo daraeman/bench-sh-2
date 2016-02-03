@@ -1,7 +1,8 @@
 #!/bin/bash
 #####################################################################
 # Benchmark Script 2 by Hidden Refuge from FreeVPS                  #
-# Copyright(C) 2015 - 2016 by Hidden Refuge                         #
+# Copyright(C) 2015 - Hidden Refuge                                 #
+# License: GNU General Public License 3.0                           #
 # Github: https://github.com/hidden-refuge/bench-sh-2               #
 #####################################################################
 # Original script by akamaras/camarg                                #
@@ -207,6 +208,7 @@ hlp () {
 	echo "-b6		: Normal benchmark with IPv6 only speedtest, I/O test and Geekbench system benchmark."
 	echo "-b46		: Normal benchmark with IPv4 and IPv6 speedtest, I/O test and Geekbench system benchmark."
 	echo "-b64		: Same as above."
+	echo "-p		: Performance only, no network tests."
 	echo "-h		: This help page."
 	echo ""
 	echo "The Geekbench system benchmark is experimental. So beware of failure!"
@@ -231,6 +233,8 @@ case $1 in
 		sysinfo; speedtest4; speedtest6; iotest; gbench;;
 	'-b64' )
 		sysinfo; speedtest4; speedtest6; iotest; gbench;;
+	'-p' )
+		sysinfo; iotest; gbench;;
 	'-h' )
 		hlp;;
 	*)
